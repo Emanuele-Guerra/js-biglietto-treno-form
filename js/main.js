@@ -1,10 +1,10 @@
-let nome = document.getElementById("nome")
-let kilometri = document.getElementById("kilometri")
-let minorenne = document.getElementById("minorenne")
-let standard = document.getElementById("standard")
-let senior = document.getElementById("senior")
+let nome = document.getElementById("nome");
+let km = document.getElementById("kilometri");
+let minorenne = document.getElementById("minorenne");
+let standard = document.getElementById("standard");
+let senior = document.getElementById("senior");
 
-let km = ""
+let km = ("")
 
 let prezzoPerKm = 0.21
 
