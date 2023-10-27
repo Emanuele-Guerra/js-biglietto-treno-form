@@ -1,5 +1,7 @@
 let nome = document.getElementById("nome");
-let km = document.getElementById("kilometri");
+let kilometri = document.getElementById("kilometri");
+let genera = document.getElementById("genera")
+
 // let minorenne = document.getElementById("minorenne");
 // let standard = document.getElementById("standard");
 // let senior = document.getElementById("senior");
@@ -7,20 +9,30 @@ let km = document.getElementById("kilometri");
 let eta = document.getElementById("eta");
 
 let prezzoPerKm = 0.21
-
+let km =parseInt(kilometri);
 let prezzoTotale = (km * prezzoPerKm);
-let genera = document.getElementById("genera");
+
+
 
 console.log("eta: ", eta);
+console.log("prezzo totale prima = ", prezzoTotale);
 
 
 
-if (eta == "senior" && genera != null) {
 
+    
+    genera.addEventListener("click", function(){
+        
     (prezzoTotale *= 0.6);
-    document.getElementById("costo").innerHTML("");
-}
+    console.log("prezzo totale dopo = ", prezzoTotale);
+        
+    })
+    
+    
+    if (eta == "senior") {
+        (prezzoTotale *= 0.6);
 
+    }
 
 else if (eta == "minorenne") {
 
