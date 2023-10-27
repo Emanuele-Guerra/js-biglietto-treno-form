@@ -1,12 +1,12 @@
-let nome = document.getElementById("nome");
-let kilometri = document.getElementById("kilometri");
-let genera = document.getElementById("genera")
+let nome = document.getElementById("nome").value;
+let kilometri = document.getElementById("kilometri").value;
+let genera = document.getElementById("genera");
 
 // let minorenne = document.getElementById("minorenne");
 // let standard = document.getElementById("standard");
 // let senior = document.getElementById("senior");
 
-let eta = document.getElementById("eta");
+let eta = document.getElementById("eta").value;
 
 let prezzoPerKm = 0.21
 let km =parseInt(kilometri);
@@ -14,8 +14,7 @@ let prezzoTotale = (km * prezzoPerKm);
 
 
 
-console.log("eta: ", eta);
-console.log("prezzo totale prima = ", prezzoTotale);
+
 
 
 
@@ -25,7 +24,8 @@ console.log("prezzo totale prima = ", prezzoTotale);
         
     (prezzoTotale *= 0.6);
     console.log("prezzo totale dopo = ", prezzoTotale);
-        
+    console.log("nome dopo prima = ", nome);
+    console.log("eta dopo prima = ", eta);  
     })
     
     
